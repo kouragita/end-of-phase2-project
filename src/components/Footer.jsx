@@ -9,7 +9,7 @@ const Footer = () => {
           <ul>
             <li></li>
             <li>Diversity & Inclusion</li>
-            <li>Our teams</li>
+            <li>Teamwork</li>
           </ul>
         </div>
 
@@ -36,18 +36,11 @@ const Footer = () => {
 
         <div className="footer-column">
           <h4>Contact us</h4>
-          <ul className="social-icons">
-            <li><i className="fa fa-facebook"></i></li>
-            <li><i className="fa fa-instagram"></i></li>
-            <li><i className="fa fa-twitter"></i></li>
-            <li><i className="fa fa-linkedin"></i></li>
-            <li><i className="fa fa-youtube"></i></li>
-          </ul>
         </div>
       </div>
 
       <div className="footer-right">
-        <button className="app-store-btn">Download on App Store</button>
+        <button className="app-store-btn">Download on the App Store</button>
         <button className="google-play-btn">Download on Google Play</button>
       </div>
     </footer>
