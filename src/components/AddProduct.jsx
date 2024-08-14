@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';//A library for addtocart logo
+import axios from 'axios';//to fetch api data from db.json, mainly used to send asynchronous HTTP requests to REST endpoints. Using Axios we make API requests in our application. Once the request is made we get the data in Return, and then we use this data in our project.
 
 const AddProduct = () => {
   const [formData, setFormData] = useState({
