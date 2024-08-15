@@ -23,7 +23,18 @@ const Cart = ({ cartItems, removeFromCart }) => {
       <h3>Total: ${total.toFixed(2)}</h3>
       {cartItems.length > 0 && (
         <Link to="/checkout">
-          <button className="checkout-button">Proceed to Checkout</button>
+          <button className="checkout-button"  style={{
+      backgroundColor: '#337ab7', // Blue background
+      color: '#fff',               // White text
+      padding: '10px 20px',        // Padding inside the button
+      border: 'none',              // No border
+      borderRadius: '5px',         // Rounded corners
+      cursor: 'pointer',           // Pointer cursor on hover
+      width: '100%',               // Full width of the parent container
+      textAlign: 'center',         // Center text alignment
+      textDecoration: 'none',      // No underline on text
+      transition: 'background-color 0.3s ease' // Smooth transition on hover
+    }}>Proceed to Checkout</button>
         </Link>
       )}
     </div>
