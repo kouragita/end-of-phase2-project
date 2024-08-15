@@ -1,9 +1,8 @@
-// takes in the name of the product and its price... returms the sum of the cartlist
-// also removes a product from cartlist
+// Cart.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = ({ cartItems, removeFromCart }) => {
-  // Convert prices to numbers to ensure correct calculations
   const total = cartItems.reduce((acc, item) => acc + (parseFloat(item.price) || 0), 0);
 
   return (
@@ -22,6 +21,11 @@ const Cart = ({ cartItems, removeFromCart }) => {
         </ul>
       )}
       <h3>Total: ${total.toFixed(2)}</h3>
+      {cartItems.length > 0 && (
+        <Link to="/checkout">
+          <button className="checkout-button">Proceed to Checkout</button>
+        </Link>
+      )}
     </div>
   );
 };
