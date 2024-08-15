@@ -34,7 +34,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
       textAlign: 'center',         // Center text alignment
       textDecoration: 'none',      // No underline on text
       transition: 'background-color 0.3s ease' // Smooth transition on hover
-    }}>Proceed to Checkout</button>
+    }}>Pay Now</button>
         </Link>
       )}
     </div>
